@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AcademicPlan
+namespace AcademicPlan.UserControls
 {
     public partial class WindowTabControlBase : UserControl
     {
+        protected Int32 updateMask;
+
         public WindowTabControlBase()
         {
             InitializeComponent();

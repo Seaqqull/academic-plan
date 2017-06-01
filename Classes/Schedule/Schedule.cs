@@ -66,15 +66,14 @@ namespace AcademicPlan.Classes
         public override bool Equals(object obj)
         {
             ScheduleKey sk = obj as ScheduleKey;
-            bool condition = this.course == sk.course && this.month.id == sk.month.id && Week.Compare(this.week, sk.week);
-            return condition;
+            return this.course == sk.course && this.month.id == sk.month.id && Week.Compare(this.week, sk.week);
         }
     }
     [Serializable]
     public class ScheduleData
     {
         //данные о графике (ключ - дата, значение - символ)
-        public Dictionary<ScheduleKey, string> data { get; private set; }
+        public Dictionary<ScheduleKey, string> data { get; private set; } 
         // начальные данные для формирования графика
         public Month start_month;
         public int start_date;
@@ -129,25 +128,25 @@ namespace AcademicPlan.Classes
             }
             catch
             {
-                MetroFramework.MetroMessageBox.Show(MetroFramework.Forms.MetroForm.ActiveForm, "Неудалось считать данные", "Ошибка чтения файла", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MetroFramework.MetroMessageBox.Show(MetroFramework.Forms.MetroForm.ActiveForm, "Ошибка загрузки файла");
                 return false;
             }
         }
         //сохранение данных в бинарный файл
         public bool SaveDataToBinary(string path)
         {
-
+            
             IFormatter formatter = new BinaryFormatter();
             try
             {
                 Stream stream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None);
                 formatter.Serialize(stream, ScheduleData.Instance);
                 stream.Close();
-                return true;
+                return true; 
             }
             catch
             {
-                MetroFramework.MetroMessageBox.Show(MetroFramework.Forms.MetroForm.ActiveForm, "Неудалось сохранить данные", "Ошибка сохранения файла", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MetroFramework.MetroMessageBox.Show(MetroFramework.Forms.MetroForm.ActiveForm, "Ошибка сохранения файла");
                 return false;
             }
         }
@@ -160,7 +159,7 @@ namespace AcademicPlan.Classes
                 return instance;
             }
             private set
-            { }
+            {}
         }
     }
 }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AcademicPlan
+namespace AcademicPlan.UserControls
 {
     public partial class IlluminatedButton : UserControl
     {
-        private static List<IlluminatedButton> groupList;        
+        private static List<IlluminatedButton> groupList = new List<IlluminatedButton>();
 
         public delegate void ButtonClickedEventHandler(object sender, EventArgs e);
         public event ButtonClickedEventHandler OnUserControlButtonClicked;
@@ -34,9 +34,6 @@ namespace AcademicPlan
             this.ColorLabelSelected = Color.Black;
             this.colorButtonSelected = Color.White;
             this.buttonIlluminated.Click += new EventHandler(buttonIlluminated_Click);
-
-            groupList = new List<IlluminatedButton>();
-            //groupList 
         }        
 
         private void IlluminatedButton_BackColorChanged(object sender, EventArgs e)
@@ -210,7 +207,7 @@ namespace AcademicPlan
 
         private void ClearGroup() {
             for (int i = 0; i < groupList.Count; i++)
-                if (groupList[i].CurrentGroup == this.CurrentGroup && groupList[i].Name != this.Name /*&& groupList[i].Parent == this.Parent*/)
+                if (groupList[i].CurrentGroup == this.CurrentGroup && groupList[i].Name != this.Name && groupList[i].Parent == this.Parent)
                     groupList[i].IsSelected = false;
         }
 

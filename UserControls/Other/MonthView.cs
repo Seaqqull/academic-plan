@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using AcademicPlan.Classes;
 
-namespace AcademicPlan
+namespace AcademicPlan.UserControls
 {
     public partial class MonthView : UserControl
     {
@@ -79,7 +79,8 @@ namespace AcademicPlan
             }
             else
             {
-                MessageBox.Show("Пустой список недель", "Ошибка списка");
+                
+                MetroFramework.MetroMessageBox.Show(MetroFramework.Forms.MetroForm.ActiveForm, "Пустой список недель", "Ошибка списка");
                 return false;
             }
             SetDataView(courses);       
@@ -122,9 +123,13 @@ namespace AcademicPlan
 
         public bool SetCellData(Week week, int course, string value)
         {
+            int week_number;
             try
             {
-                int week_number = weeks.First(x => Week.Compare(x.Value,week)).Key;
+                //if (!weeks.ContainsValue(week)) return false;
+                
+                week_number = weeks.First(x => Week.Compare(x.Value,week)).Key;
+
                 int column_index = 0;
                 foreach(DataGridViewCell cell in dataGridViewMonth.Rows[0].Cells)
                 {
@@ -139,7 +144,7 @@ namespace AcademicPlan
             }
             catch
             {
-                MessageBox.Show("Ошибка заполнения ячейки");
+                //MessageBox.Show("Ошибка заполнения ячейки");
                 return false;
             }
         }

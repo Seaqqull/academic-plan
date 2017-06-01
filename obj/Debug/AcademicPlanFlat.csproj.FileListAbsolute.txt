@@ -6,11 +6,17 @@ C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\Academ
 C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
-C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.BorderedCell.resources
-C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.ArrowButton.resources
-C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.IlluminatedButton.resources
-C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.MonthView.resources
-C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.WindowTabControlBase.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.Dialogs.SetRange.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.Dialogs.SetRangeExt.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.UserControls.BorderedCell.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.Dialogs.Authentication.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.UserControls.ArrowButton.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.UserControls.IlluminatedButton.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.UserControls.ChoisePanel.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.UserControls.CustomNumeric.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.UserControls.MonthView.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.UserControls.WindowTabControlBase.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.UserControls.WindowTabControlDataBase.resources
 C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.UserControls.WindowTabControlEPlan.resources
 C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.UserControls.WindowTabControlEProcess.resources
 C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.WindowMain.resources
@@ -18,6 +24,5 @@ C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\Academ
 C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlanFlat.csproj.GenerateResource.Cache
 C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.exe
 C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.pdb
-D:\Repository\Git\VisualStudio\AcademicPlanFlat\AcademicPlan\bin\Debug\AcademicPlan.exe.config
-D:\Repository\Git\VisualStudio\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.exe
-D:\Repository\Git\VisualStudio\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.pdb
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlan.Dialogs.NewSemestr.resources
+C:\Users\lucyf\Documents\Visual Studio 2015\Projects\ADO\AcademicPlanFlat\AcademicPlan\obj\Debug\AcademicPlanFlat.csprojResolveAssemblyReference.cache

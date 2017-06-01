@@ -21,7 +21,7 @@ namespace AcademicPlan.Classes
         Dictionary<Int32, Month> months; //список месяцев
         List<Week> weeks; //список учебных недель, рассчитанных из календарного года
 
-        public ProjectSchedule(MetroForm incomeMain, Panel inWindowContainer, WindowTabControlBase incomeWindow, String incomeTitle, IDataController incomeDataController, IRelation incomeRelation) : base(incomeMain, inWindowContainer, incomeWindow, incomeTitle, incomeDataController, incomeRelation)
+        public ProjectSchedule(WindowMain incomeMain, Panel inWindowContainer, WindowTabControlBase incomeWindow, String incomeTitle, IDataController incomeDataController, IRelation incomeRelation) : base(incomeMain, inWindowContainer, incomeWindow, incomeTitle, incomeDataController, incomeRelation)
         {
             months = new Dictionary<int, Month>();
             months.Add(1, new Month(1, "Январь", 31));

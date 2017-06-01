@@ -12,7 +12,7 @@ using MetroFramework.Controls;
 
 namespace AcademicPlan.UserControls
 {
-    public partial class WindowTabControlEProcess : AcademicPlan.WindowTabControlBase
+    public partial class WindowTabControlEProcess : WindowTabControlBase
     {
         Int32 rightPanelBeginWidth, rightPanelEndWidth, rightPanelStep; // RightPanel Animation Settings
         const Int16 timeToChangeWidthRightPanel = 500; // miliseconds
@@ -62,6 +62,7 @@ namespace AcademicPlan.UserControls
             //    monthV.OnUserControlGridClicked += new MonthView.DataGridViewCellMouseEventHandler(monthView_Click);
             //}
         }
+
         private void monthView_Click(object sender, EventArgs e)
         {
             ((MonthView)sender).ActiveTool = selectedRadioButtonTag;
@@ -71,13 +72,17 @@ namespace AcademicPlan.UserControls
         {
             foreach (KeyValuePair<ScheduleKey, string> dataValue in ScheduleData.Instance.data)
             {
-                foreach (MonthView monthV in panelCenterContentMain.Controls)
+                for (int i = 2; i < panelCenterContentMain.Controls.Count; i++)
                 {
-                    if (monthV.month.id == dataValue.Key.month.id)
-                    {
-                        monthV.SetCellData(dataValue.Key.week, dataValue.Key.course, dataValue.Value);
-                    }
+                    ((MonthView)panelCenterContentMain.Controls[i]).SetCellData(dataValue.Key.week, dataValue.Key.course, dataValue.Value);
                 }
+                //foreach (MonthView monthV in panelCenterContentMain.Controls)
+                //{
+                //    if (monthV.month.id == dataValue.Key.month.id)
+                //    {
+                //        monthV.SetCellData(dataValue.Key.week, dataValue.Key.course, dataValue.Value);
+                //    }
+                //}
             }
         }
         //заполняет все поля начальных значений из класса с данными
@@ -104,7 +109,6 @@ namespace AcademicPlan.UserControls
                 monthTemp = UserData.GetNextMonth(monthTemp);
             }
         }        
-
 
         private void timerSlideRight_Tick(object sender, EventArgs e)
         {

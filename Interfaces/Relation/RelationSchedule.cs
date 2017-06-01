@@ -12,7 +12,7 @@ namespace AcademicPlan.Interfaces
     {
         public void FinalWindow(ProjectBase userData, WindowTabControlBase userWindow)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void InitWindow(ProjectBase userData, WindowTabControlBase userWindow)

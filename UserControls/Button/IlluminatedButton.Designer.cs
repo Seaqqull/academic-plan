@@ -1,4 +1,4 @@
-﻿namespace AcademicPlan
+﻿namespace AcademicPlan.UserControls
 {
     partial class IlluminatedButton
     {

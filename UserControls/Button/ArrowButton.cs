@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 
-namespace AcademicPlan
+namespace AcademicPlan.UserControls
 {
     public enum ArrowButtonStyle
     {

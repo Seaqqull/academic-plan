@@ -62,7 +62,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panelRightInfoButtons = new System.Windows.Forms.Panel();
-            this.arrowButtonRightSlide = new AcademicPlan.ArrowButton();
+            this.arrowButtonRightSlide = new AcademicPlan.UserControls.ArrowButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.OpenScheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveScheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,18 +80,18 @@
             this.comboBoxFirstMonth = new MetroFramework.Controls.MetroComboBox();
             this.panelCenterContent = new System.Windows.Forms.Panel();
             this.panelCenterContentMain = new MetroFramework.Controls.MetroPanel();
-            this.monthView12 = new AcademicPlan.MonthView();
-            this.monthView11 = new AcademicPlan.MonthView();
-            this.monthView10 = new AcademicPlan.MonthView();
-            this.monthView9 = new AcademicPlan.MonthView();
-            this.monthView8 = new AcademicPlan.MonthView();
-            this.monthView7 = new AcademicPlan.MonthView();
-            this.monthView6 = new AcademicPlan.MonthView();
-            this.monthView5 = new AcademicPlan.MonthView();
-            this.monthView4 = new AcademicPlan.MonthView();
-            this.monthView3 = new AcademicPlan.MonthView();
-            this.monthView2 = new AcademicPlan.MonthView();
-            this.monthView1 = new AcademicPlan.MonthView();
+            this.monthView12 = new AcademicPlan.UserControls.MonthView();
+            this.monthView11 = new AcademicPlan.UserControls.MonthView();
+            this.monthView10 = new AcademicPlan.UserControls.MonthView();
+            this.monthView9 = new AcademicPlan.UserControls.MonthView();
+            this.monthView8 = new AcademicPlan.UserControls.MonthView();
+            this.monthView7 = new AcademicPlan.UserControls.MonthView();
+            this.monthView6 = new AcademicPlan.UserControls.MonthView();
+            this.monthView5 = new AcademicPlan.UserControls.MonthView();
+            this.monthView4 = new AcademicPlan.UserControls.MonthView();
+            this.monthView3 = new AcademicPlan.UserControls.MonthView();
+            this.monthView2 = new AcademicPlan.UserControls.MonthView();
+            this.monthView1 = new AcademicPlan.UserControls.MonthView();
             this.panelCenterContentLeft = new System.Windows.Forms.Panel();
             this.labelC4 = new System.Windows.Forms.Label();
             this.labelC3 = new System.Windows.Forms.Label();
@@ -115,28 +115,35 @@
             // 
             // panelUpper
             // 
+            this.panelUpper.BackColor = System.Drawing.Color.White;
             this.panelUpper.Controls.Add(this.menuStrip1);
+            this.panelUpper.Size = new System.Drawing.Size(1160, 24);
             // 
             // panelBottom
             // 
+            this.panelBottom.BackColor = System.Drawing.Color.White;
             this.panelBottom.Controls.Add(this.panelBottomInfo);
             this.panelBottom.Controls.Add(this.panelBottomSlide);
-            this.panelBottom.Location = new System.Drawing.Point(0, 447);
-            this.panelBottom.Size = new System.Drawing.Size(992, 79);
+            this.panelBottom.Location = new System.Drawing.Point(0, 511);
+            this.panelBottom.Size = new System.Drawing.Size(1160, 79);
             this.panelBottom.TabIndex = 4;
             // 
             // panelRight
             // 
+            this.panelRight.BackColor = System.Drawing.Color.White;
             this.panelRight.Controls.Add(this.panelRightInfo);
-            this.panelRight.Location = new System.Drawing.Point(752, 24);
-            this.panelRight.Size = new System.Drawing.Size(240, 423);
+            this.panelRight.Location = new System.Drawing.Point(920, 24);
+            this.panelRight.Size = new System.Drawing.Size(240, 487);
             // 
             // panelCenter
             // 
             this.panelCenter.AutoScroll = false;
+            this.panelCenter.BackColor = System.Drawing.Color.White;
             this.panelCenter.Controls.Add(this.panelCenterContent);
             this.panelCenter.Controls.Add(this.panelCenterTop);
-            this.panelCenter.Size = new System.Drawing.Size(752, 423);
+            this.panelCenter.HorizontalScrollbar = false;
+            this.panelCenter.Size = new System.Drawing.Size(920, 487);
+            this.panelCenter.VerticalScrollbar = false;
             // 
             // timerSlideRight
             // 
@@ -145,23 +152,26 @@
             // 
             // panelBottomSlide
             // 
+            this.panelBottomSlide.BackColor = System.Drawing.Color.White;
             this.panelBottomSlide.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBottomSlide.Location = new System.Drawing.Point(0, 0);
             this.panelBottomSlide.Name = "panelBottomSlide";
-            this.panelBottomSlide.Size = new System.Drawing.Size(992, 25);
+            this.panelBottomSlide.Size = new System.Drawing.Size(1160, 25);
             this.panelBottomSlide.TabIndex = 5;
             // 
             // panelBottomInfo
             // 
+            this.panelBottomInfo.BackColor = System.Drawing.Color.White;
             this.panelBottomInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBottomInfo.Location = new System.Drawing.Point(0, 25);
             this.panelBottomInfo.Name = "panelBottomInfo";
-            this.panelBottomInfo.Size = new System.Drawing.Size(992, 54);
+            this.panelBottomInfo.Size = new System.Drawing.Size(1160, 54);
             this.panelBottomInfo.TabIndex = 6;
             // 
             // radioButton13
             // 
             this.radioButton13.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton13.BackColor = System.Drawing.Color.White;
             this.radioButton13.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton13.FlatAppearance.BorderSize = 0;
             this.radioButton13.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -176,12 +186,13 @@
             this.radioButton13.TabIndex = 29;
             this.radioButton13.Text = "*";
             this.radioButton13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton13.UseVisualStyleBackColor = true;
+            this.radioButton13.UseVisualStyleBackColor = false;
             this.radioButton13.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton12
             // 
             this.radioButton12.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton12.BackColor = System.Drawing.Color.White;
             this.radioButton12.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton12.FlatAppearance.BorderSize = 0;
             this.radioButton12.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -196,12 +207,13 @@
             this.radioButton12.TabIndex = 28;
             this.radioButton12.Text = "О";
             this.radioButton12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioButton12.UseVisualStyleBackColor = false;
             this.radioButton12.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton11
             // 
             this.radioButton11.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton11.BackColor = System.Drawing.Color.White;
             this.radioButton11.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton11.FlatAppearance.BorderSize = 0;
             this.radioButton11.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -216,12 +228,13 @@
             this.radioButton11.TabIndex = 27;
             this.radioButton11.Text = "Х";
             this.radioButton11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButton11.UseVisualStyleBackColor = false;
             this.radioButton11.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton10
             // 
             this.radioButton10.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton10.BackColor = System.Drawing.Color.White;
             this.radioButton10.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton10.FlatAppearance.BorderSize = 0;
             this.radioButton10.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -236,12 +249,13 @@
             this.radioButton10.TabIndex = 26;
             this.radioButton10.Text = "::";
             this.radioButton10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.UseVisualStyleBackColor = false;
             this.radioButton10.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton9
             // 
             this.radioButton9.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton9.BackColor = System.Drawing.Color.White;
             this.radioButton9.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton9.FlatAppearance.BorderSize = 0;
             this.radioButton9.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -256,12 +270,13 @@
             this.radioButton9.TabIndex = 25;
             this.radioButton9.Text = "Х-II";
             this.radioButton9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.UseVisualStyleBackColor = false;
             this.radioButton9.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton8
             // 
             this.radioButton8.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton8.BackColor = System.Drawing.Color.White;
             this.radioButton8.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton8.FlatAppearance.BorderSize = 0;
             this.radioButton8.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -276,12 +291,13 @@
             this.radioButton8.TabIndex = 24;
             this.radioButton8.Text = "ЛЗ";
             this.radioButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.UseVisualStyleBackColor = false;
             this.radioButton8.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton7
             // 
             this.radioButton7.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton7.BackColor = System.Drawing.Color.White;
             this.radioButton7.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton7.FlatAppearance.BorderSize = 0;
             this.radioButton7.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -296,12 +312,13 @@
             this.radioButton7.TabIndex = 23;
             this.radioButton7.Text = "=";
             this.radioButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.UseVisualStyleBackColor = false;
             this.radioButton7.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton6
             // 
             this.radioButton6.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton6.BackColor = System.Drawing.Color.White;
             this.radioButton6.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton6.FlatAppearance.BorderSize = 0;
             this.radioButton6.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -316,12 +333,13 @@
             this.radioButton6.TabIndex = 22;
             this.radioButton6.Text = ".";
             this.radioButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.UseVisualStyleBackColor = false;
             this.radioButton6.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton5
             // 
             this.radioButton5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton5.BackColor = System.Drawing.Color.White;
             this.radioButton5.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton5.FlatAppearance.BorderSize = 0;
             this.radioButton5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -336,12 +354,13 @@
             this.radioButton5.TabIndex = 21;
             this.radioButton5.Text = "Д";
             this.radioButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.UseVisualStyleBackColor = false;
             this.radioButton5.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton4
             // 
             this.radioButton4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton4.BackColor = System.Drawing.Color.White;
             this.radioButton4.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton4.FlatAppearance.BorderSize = 0;
             this.radioButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -356,12 +375,13 @@
             this.radioButton4.TabIndex = 20;
             this.radioButton4.Text = "КЗ";
             this.radioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.UseVisualStyleBackColor = false;
             this.radioButton4.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton3
             // 
             this.radioButton3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton3.BackColor = System.Drawing.Color.White;
             this.radioButton3.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton3.FlatAppearance.BorderSize = 0;
             this.radioButton3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -376,12 +396,13 @@
             this.radioButton3.TabIndex = 19;
             this.radioButton3.Text = "Z";
             this.radioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.UseVisualStyleBackColor = false;
             this.radioButton3.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton2
             // 
             this.radioButton2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton2.BackColor = System.Drawing.Color.White;
             this.radioButton2.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton2.FlatAppearance.BorderSize = 0;
             this.radioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -396,12 +417,13 @@
             this.radioButton2.TabIndex = 18;
             this.radioButton2.Text = "Х1";
             this.radioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.UseVisualStyleBackColor = false;
             this.radioButton2.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // radioButton1
             // 
             this.radioButton1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton1.BackColor = System.Drawing.Color.White;
             this.radioButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton1.FlatAppearance.BorderSize = 0;
             this.radioButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
@@ -416,22 +438,24 @@
             this.radioButton1.TabIndex = 17;
             this.radioButton1.Text = "II";
             this.radioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.UseVisualStyleBackColor = false;
             this.radioButton1.Click += new System.EventHandler(this.radioRightInfoButtons_Click);
             // 
             // panelRightInfo
             // 
+            this.panelRightInfo.BackColor = System.Drawing.Color.White;
             this.panelRightInfo.Controls.Add(this.panelRightInfoTitles);
             this.panelRightInfo.Controls.Add(this.panelRightInfoButtons);
             this.panelRightInfo.Controls.Add(this.arrowButtonRightSlide);
             this.panelRightInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRightInfo.Location = new System.Drawing.Point(0, 0);
             this.panelRightInfo.Name = "panelRightInfo";
-            this.panelRightInfo.Size = new System.Drawing.Size(240, 423);
+            this.panelRightInfo.Size = new System.Drawing.Size(240, 487);
             this.panelRightInfo.TabIndex = 4;
             // 
             // panelRightInfoTitles
             // 
+            this.panelRightInfoTitles.BackColor = System.Drawing.Color.White;
             this.panelRightInfoTitles.Controls.Add(this.label13);
             this.panelRightInfoTitles.Controls.Add(this.label6);
             this.panelRightInfoTitles.Controls.Add(this.label4);
@@ -448,7 +472,7 @@
             this.panelRightInfoTitles.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelRightInfoTitles.Location = new System.Drawing.Point(72, 0);
             this.panelRightInfoTitles.Name = "panelRightInfoTitles";
-            this.panelRightInfoTitles.Size = new System.Drawing.Size(168, 423);
+            this.panelRightInfoTitles.Size = new System.Drawing.Size(168, 487);
             this.panelRightInfoTitles.TabIndex = 2;
             // 
             // label13
@@ -609,6 +633,7 @@
             // 
             // panelRightInfoButtons
             // 
+            this.panelRightInfoButtons.BackColor = System.Drawing.Color.White;
             this.panelRightInfoButtons.Controls.Add(this.radioButton13);
             this.panelRightInfoButtons.Controls.Add(this.radioButton11);
             this.panelRightInfoButtons.Controls.Add(this.radioButton3);
@@ -625,13 +650,13 @@
             this.panelRightInfoButtons.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelRightInfoButtons.Location = new System.Drawing.Point(24, 0);
             this.panelRightInfoButtons.Name = "panelRightInfoButtons";
-            this.panelRightInfoButtons.Size = new System.Drawing.Size(48, 423);
+            this.panelRightInfoButtons.Size = new System.Drawing.Size(48, 487);
             this.panelRightInfoButtons.TabIndex = 2;
             // 
             // arrowButtonRightSlide
             // 
             this.arrowButtonRightSlide.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.arrowButtonRightSlide.CurrentButtonStyle = AcademicPlan.ArrowButtonStyle.Left;
+            this.arrowButtonRightSlide.CurrentButtonStyle = AcademicPlan.UserControls.ArrowButtonStyle.Left;
             this.arrowButtonRightSlide.Dock = System.Windows.Forms.DockStyle.Left;
             this.arrowButtonRightSlide.ImageDown = ((System.Drawing.Bitmap)(resources.GetObject("arrowButtonRightSlide.ImageDown")));
             this.arrowButtonRightSlide.ImageLeft = ((System.Drawing.Bitmap)(resources.GetObject("arrowButtonRightSlide.ImageLeft")));
@@ -641,7 +666,7 @@
             this.arrowButtonRightSlide.MouseDownBackColor = System.Drawing.Color.Empty;
             this.arrowButtonRightSlide.MouseOverBackColor = System.Drawing.Color.Empty;
             this.arrowButtonRightSlide.Name = "arrowButtonRightSlide";
-            this.arrowButtonRightSlide.Size = new System.Drawing.Size(24, 423);
+            this.arrowButtonRightSlide.Size = new System.Drawing.Size(24, 487);
             this.arrowButtonRightSlide.TabIndex = 5;
             // 
             // menuStrip1
@@ -653,7 +678,7 @@
             this.SaveScheduleToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(992, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1160, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -675,6 +700,7 @@
             // 
             // panelCenterTop
             // 
+            this.panelCenterTop.BackColor = System.Drawing.Color.White;
             this.panelCenterTop.Controls.Add(this.label18);
             this.panelCenterTop.Controls.Add(this.label17);
             this.panelCenterTop.Controls.Add(this.label16);
@@ -689,7 +715,7 @@
             this.panelCenterTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCenterTop.Location = new System.Drawing.Point(0, 0);
             this.panelCenterTop.Name = "panelCenterTop";
-            this.panelCenterTop.Size = new System.Drawing.Size(752, 112);
+            this.panelCenterTop.Size = new System.Drawing.Size(920, 112);
             this.panelCenterTop.TabIndex = 0;
             // 
             // label18
@@ -754,14 +780,14 @@
             this.labelTitleMonth.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTitleMonth.Location = new System.Drawing.Point(0, 92);
             this.labelTitleMonth.Name = "labelTitleMonth";
-            this.labelTitleMonth.Size = new System.Drawing.Size(752, 20);
+            this.labelTitleMonth.Size = new System.Drawing.Size(920, 20);
             this.labelTitleMonth.TabIndex = 5;
             this.labelTitleMonth.Text = "График учебного процесса";
             this.labelTitleMonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxYearPlan
             // 
-            this.textBoxYearPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.textBoxYearPlan.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
@@ -795,7 +821,7 @@
             // 
             // textBoxFirstDay
             // 
-            this.textBoxFirstDay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.textBoxFirstDay.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
@@ -829,7 +855,7 @@
             // 
             // comboBoxEndFirstSemestr
             // 
-            this.comboBoxEndFirstSemestr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.comboBoxEndFirstSemestr.BackColor = System.Drawing.Color.White;
             this.comboBoxEndFirstSemestr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxEndFirstSemestr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
             this.comboBoxEndFirstSemestr.FormattingEnabled = true;
@@ -843,7 +869,7 @@
             // 
             // comboBoxCourse
             // 
-            this.comboBoxCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.comboBoxCourse.BackColor = System.Drawing.Color.White;
             this.comboBoxCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxCourse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
             this.comboBoxCourse.FormattingEnabled = true;
@@ -860,7 +886,7 @@
             // 
             // comboBoxFirstMonth
             // 
-            this.comboBoxFirstMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.comboBoxFirstMonth.BackColor = System.Drawing.Color.White;
             this.comboBoxFirstMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxFirstMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
             this.comboBoxFirstMonth.FormattingEnabled = true;
@@ -874,17 +900,19 @@
             // 
             // panelCenterContent
             // 
+            this.panelCenterContent.BackColor = System.Drawing.Color.White;
             this.panelCenterContent.Controls.Add(this.panelCenterContentMain);
             this.panelCenterContent.Controls.Add(this.panelCenterContentLeft);
             this.panelCenterContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCenterContent.Location = new System.Drawing.Point(0, 112);
             this.panelCenterContent.Name = "panelCenterContent";
-            this.panelCenterContent.Size = new System.Drawing.Size(752, 311);
+            this.panelCenterContent.Size = new System.Drawing.Size(920, 375);
             this.panelCenterContent.TabIndex = 1;
             // 
             // panelCenterContentMain
             // 
             this.panelCenterContentMain.AutoScroll = true;
+            this.panelCenterContentMain.BackColor = System.Drawing.Color.Transparent;
             this.panelCenterContentMain.Controls.Add(this.monthView12);
             this.panelCenterContentMain.Controls.Add(this.monthView11);
             this.panelCenterContentMain.Controls.Add(this.monthView10);
@@ -904,7 +932,7 @@
             this.panelCenterContentMain.HorizontalScrollbarSize = 10;
             this.panelCenterContentMain.Location = new System.Drawing.Point(76, 0);
             this.panelCenterContentMain.Name = "panelCenterContentMain";
-            this.panelCenterContentMain.Size = new System.Drawing.Size(676, 311);
+            this.panelCenterContentMain.Size = new System.Drawing.Size(844, 375);
             this.panelCenterContentMain.Style = MetroFramework.MetroColorStyle.Blue;
             this.panelCenterContentMain.TabIndex = 1;
             this.panelCenterContentMain.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -1023,6 +1051,7 @@
             // 
             // panelCenterContentLeft
             // 
+            this.panelCenterContentLeft.BackColor = System.Drawing.Color.White;
             this.panelCenterContentLeft.Controls.Add(this.labelC4);
             this.panelCenterContentLeft.Controls.Add(this.labelC3);
             this.panelCenterContentLeft.Controls.Add(this.labelC2);
@@ -1032,7 +1061,7 @@
             this.panelCenterContentLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelCenterContentLeft.Location = new System.Drawing.Point(0, 0);
             this.panelCenterContentLeft.Name = "panelCenterContentLeft";
-            this.panelCenterContentLeft.Size = new System.Drawing.Size(76, 311);
+            this.panelCenterContentLeft.Size = new System.Drawing.Size(76, 375);
             this.panelCenterContentLeft.TabIndex = 0;
             // 
             // labelC4
@@ -1099,8 +1128,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackColor = System.Drawing.Color.White;
-            this.DoubleBuffered = true;
             this.Name = "WindowTabControlEProcess";
+            this.Size = new System.Drawing.Size(1160, 590);
             this.panelUpper.ResumeLayout(false);
             this.panelUpper.PerformLayout();
             this.panelBottom.ResumeLayout(false);

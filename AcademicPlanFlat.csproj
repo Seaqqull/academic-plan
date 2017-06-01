@@ -61,17 +61,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BorderedCell.cs">
+    <Compile Include="Classes\EPlan\DataAccessConnector.cs" />
+    <Compile Include="Classes\EPlan\EPlan.cs" />
+    <Compile Include="Classes\ProjectDataBase.cs" />
+    <Compile Include="Dialogs\Authentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Authentication.Designer.cs">
+      <DependentUpon>Authentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\NewSemestr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\NewSemestr.Designer.cs">
+      <DependentUpon>NewSemestr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SetRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SetRange.Designer.cs">
+      <DependentUpon>SetRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SetRangeExt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SetRangeExt.Designer.cs">
+      <DependentUpon>SetRangeExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Relation\RelationDataBase.cs" />
+    <Compile Include="UserControls\Containers\BorderedCell.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="BorderedCell.Designer.cs">
+    <Compile Include="UserControls\Containers\BorderedCell.Designer.cs">
       <DependentUpon>BorderedCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\ProjectBase.cs" />
+    <Compile Include="Classes\ProjectEPlan.cs" />
     <Compile Include="Classes\ProjectSchedule.cs" />
     <Compile Include="Classes\Schedule\Schedule.cs" />
     <Compile Include="Interfaces\DataBase\IDataController.cs" />
     <Compile Include="Interfaces\DataBase\DataControllerSchedule.cs" />
+    <Compile Include="Interfaces\DataBase\DataControllerEPlan.cs" />
+    <Compile Include="Interfaces\DataBase\DataControllerNo.cs" />
+    <Compile Include="Interfaces\Relation\RelationEPlan.cs" />
+    <Compile Include="Interfaces\Relation\RelationNo.cs" />
     <Compile Include="Interfaces\Relation\RelationSchedule.cs" />
     <Compile Include="Interfaces\Relation\IRelation.cs" />
     <Compile Include="UserControls\Button\IlluminatedButton.cs">
@@ -86,11 +119,29 @@
     <Compile Include="UserControls\Button\ArrowButton.Designer.cs">
       <DependentUpon>ArrowButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Containers\ChoisePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Containers\ChoisePanel.Designer.cs">
+      <DependentUpon>ChoisePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Other\CustomNumeric.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Other\CustomNumeric.Designer.cs">
+      <DependentUpon>CustomNumeric.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Other\MonthView.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\Other\MonthView.Designer.cs">
       <DependentUpon>MonthView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Window\WindowTabControlDataBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Window\WindowTabControlDataBase.Designer.cs">
+      <DependentUpon>WindowTabControlDataBase.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Window\WindowTabControlEPlan.cs">
       <SubType>UserControl</SubType>
@@ -118,8 +169,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BorderedCell.resx">
+    <EmbeddedResource Include="Dialogs\NewSemestr.resx">
+      <DependentUpon>NewSemestr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SetRange.resx">
+      <DependentUpon>SetRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SetRangeExt.resx">
+      <DependentUpon>SetRangeExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Containers\BorderedCell.resx">
       <DependentUpon>BorderedCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Authentication.resx">
+      <DependentUpon>Authentication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Button\ArrowButton.resx">
       <DependentUpon>ArrowButton.cs</DependentUpon>
@@ -127,11 +190,20 @@
     <EmbeddedResource Include="UserControls\Button\IlluminatedButton.resx">
       <DependentUpon>IlluminatedButton.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Containers\ChoisePanel.resx">
+      <DependentUpon>ChoisePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Other\CustomNumeric.resx">
+      <DependentUpon>CustomNumeric.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Other\MonthView.resx">
       <DependentUpon>MonthView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Window\WindowTabControlBase.resx">
       <DependentUpon>WindowTabControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Window\WindowTabControlDataBase.resx">
+      <DependentUpon>WindowTabControlDataBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Window\WindowTabControlEPlan.resx">
       <DependentUpon>WindowTabControlEPlan.cs</DependentUpon>
@@ -167,12 +239,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Images\Close.png" />
     <Content Include="Resources\Images\DownArrow.png" />
     <Content Include="Resources\Images\LeftArrow.png" />
     <Content Include="Resources\Images\notebook.png" />
     <Content Include="Resources\Images\notebookRed.ico" />
     <Content Include="Resources\Images\notebookRed.png" />
     <Content Include="Resources\Images\notebookRedTitle.png" />
+    <None Include="Resources\Images\return.png" />
     <Content Include="Resources\Images\RightArrow.png" />
     <Content Include="Resources\Images\UpArrow.png" />
   </ItemGroup>

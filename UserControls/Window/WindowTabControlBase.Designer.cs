@@ -1,4 +1,4 @@
-﻿namespace AcademicPlan
+﻿namespace AcademicPlan.UserControls
 {
     partial class WindowTabControlBase
     {
@@ -28,48 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelUpper = new System.Windows.Forms.Panel();
-            this.panelBottom = new System.Windows.Forms.Panel();
-            this.panelRight = new System.Windows.Forms.Panel();
-            this.panelCenter = new System.Windows.Forms.Panel();
+            this.panelUpper = new MetroFramework.Controls.MetroPanel();
+            this.panelBottom = new MetroFramework.Controls.MetroPanel();
+            this.panelRight = new MetroFramework.Controls.MetroPanel();
+            this.panelCenter = new MetroFramework.Controls.MetroPanel();
             this.SuspendLayout();
             // 
             // panelUpper
             // 
             this.panelUpper.BackColor = System.Drawing.Color.Transparent;
             this.panelUpper.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUpper.HorizontalScrollbarBarColor = true;
+            this.panelUpper.HorizontalScrollbarHighlightOnWheel = false;
+            this.panelUpper.HorizontalScrollbarSize = 10;
             this.panelUpper.Location = new System.Drawing.Point(0, 0);
             this.panelUpper.Name = "panelUpper";
-            this.panelUpper.Size = new System.Drawing.Size(992, 24);
+            this.panelUpper.Size = new System.Drawing.Size(1160, 24);
             this.panelUpper.TabIndex = 0;
+            this.panelUpper.VerticalScrollbarBarColor = true;
+            this.panelUpper.VerticalScrollbarHighlightOnWheel = false;
+            this.panelUpper.VerticalScrollbarSize = 10;
             // 
             // panelBottom
             // 
             this.panelBottom.BackColor = System.Drawing.Color.Transparent;
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 502);
+            this.panelBottom.HorizontalScrollbarBarColor = true;
+            this.panelBottom.HorizontalScrollbarHighlightOnWheel = false;
+            this.panelBottom.HorizontalScrollbarSize = 10;
+            this.panelBottom.Location = new System.Drawing.Point(0, 566);
             this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(992, 24);
+            this.panelBottom.Size = new System.Drawing.Size(1160, 24);
             this.panelBottom.TabIndex = 3;
+            this.panelBottom.VerticalScrollbarBarColor = true;
+            this.panelBottom.VerticalScrollbarHighlightOnWheel = false;
+            this.panelBottom.VerticalScrollbarSize = 10;
             // 
             // panelRight
             // 
             this.panelRight.BackColor = System.Drawing.Color.Transparent;
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight.Location = new System.Drawing.Point(968, 24);
+            this.panelRight.HorizontalScrollbarBarColor = true;
+            this.panelRight.HorizontalScrollbarHighlightOnWheel = false;
+            this.panelRight.HorizontalScrollbarSize = 10;
+            this.panelRight.Location = new System.Drawing.Point(1136, 24);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(24, 478);
+            this.panelRight.Size = new System.Drawing.Size(24, 542);
             this.panelRight.TabIndex = 2;
+            this.panelRight.VerticalScrollbarBarColor = true;
+            this.panelRight.VerticalScrollbarHighlightOnWheel = false;
+            this.panelRight.VerticalScrollbarSize = 10;
             // 
             // panelCenter
             // 
             this.panelCenter.AutoScroll = true;
             this.panelCenter.BackColor = System.Drawing.Color.Transparent;
             this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCenter.HorizontalScrollbar = true;
+            this.panelCenter.HorizontalScrollbarBarColor = true;
+            this.panelCenter.HorizontalScrollbarHighlightOnWheel = false;
+            this.panelCenter.HorizontalScrollbarSize = 10;
             this.panelCenter.Location = new System.Drawing.Point(0, 24);
             this.panelCenter.Name = "panelCenter";
-            this.panelCenter.Size = new System.Drawing.Size(968, 478);
+            this.panelCenter.Size = new System.Drawing.Size(1136, 542);
             this.panelCenter.TabIndex = 1;
+            this.panelCenter.VerticalScrollbar = true;
+            this.panelCenter.VerticalScrollbarBarColor = true;
+            this.panelCenter.VerticalScrollbarHighlightOnWheel = false;
+            this.panelCenter.VerticalScrollbarSize = 10;
             // 
             // WindowTabControlBase
             // 
@@ -82,16 +108,16 @@
             this.Controls.Add(this.panelUpper);
             this.DoubleBuffered = true;
             this.Name = "WindowTabControlBase";
-            this.Size = new System.Drawing.Size(992, 526);
+            this.Size = new System.Drawing.Size(1160, 590);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        protected System.Windows.Forms.Panel panelUpper;
-        protected System.Windows.Forms.Panel panelBottom;
-        protected System.Windows.Forms.Panel panelRight;
-        protected System.Windows.Forms.Panel panelCenter;
+        
+        protected MetroFramework.Controls.MetroPanel panelUpper;
+        protected MetroFramework.Controls.MetroPanel panelBottom;
+        protected MetroFramework.Controls.MetroPanel panelRight;
+        protected MetroFramework.Controls.MetroPanel panelCenter;
     }
 }
